@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 7 - Exercício HTML - JS</title>
+
+    <link type="text/css" rel="stylesheet" href="./main.css">
+
+</head>
+    <body>
+        
+        <section id="contact">
+            
+            <div class="container">
+                <fieldset class="header">
+                    <h2><i>Contato</i></h2>
+                    
+                    <div class="formulario">
+                        <form class="form" id="form">
+
+                            <div class="campo">
+                                <label for="nome"><b>Nome</b></label>
+                                <input type="text" class="text" id="nome" name="nome" required placeholder="Nome Completo"/>
+                                <i><img class="img-erro"  src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever o nome completo</strong> </small>
+                            </div>
+                        
+                            <div class="campo">
+                                <label for="email"><b>E-mail</b></label>
+                                <input type="email" placeholder="seu@email.com" class="email" id="email" required/>
+                                <i><img class="img-erro" src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever email corretamente</strong> </small>
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="tel"><b>Telefone</b></label>
+                                <input type="tel" placeholder="(xx)xxxxx-xxxx" class="tel" id="tel" required/>
+                                <i><img class="img-erro" src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever o telefone correto</strong> </small>
+                            </div>
+                        
+                            <div class="campo_2">
+                                <label><b>Qual a sua favorita?</b></label>
+                                <label class="radio1" for="A">
+                                    <b><input class="radio" type="radio"  name="Campo" id="A" value="A"/>A</b>
+                                </label>
+                                <label class="radio1" for="B">
+                                    <b><input class="radio" type="radio"  name="Campo" id="B" value="B"/>B</b>
+                                </label>
+                                
+                                
+                            </div>
+
+                            <div class="campo">
+                                <textarea rasw="10" cols="40" maxlength="500" placeholder="Sua mensagem" id="mensagem" (opcional)></textarea>
+                                <button  class="cadastro" id="cadastro" type="submit">Enviar</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+            <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html>
